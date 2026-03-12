@@ -1,10 +1,9 @@
 'use client'
 
-import { useParams } from "next/navigation"
+import { useParams } from 'next/navigation'
 
 function UserPage() {
-
-  const params = useParams()
+  const params = useParams<{ userId: string }>()
   console.log(params)
 
   return (

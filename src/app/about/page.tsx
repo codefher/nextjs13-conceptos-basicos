@@ -1,9 +1,6 @@
 'use client'
-import { useRouter } from 'next/navigation'
 
-/* export const metadata = {
-  title: 'Acerca de nosotros'
-} */
+import { useRouter } from 'next/navigation'
 
 function AboutPage() {
   const router = useRouter()
