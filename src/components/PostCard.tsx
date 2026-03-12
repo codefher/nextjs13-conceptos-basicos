@@ -1,11 +1,18 @@
 'use client'
 
-import Link from "next/link"
+import Link from 'next/link'
+
+interface Post {
+  userId: number
+  id: number
+  title: string
+  body: string
+}
 
 // RCC - React Client Component
-function PostCard({ post }) {
+function PostCard({ post }: { post: Post }) {
   return (
-    <div key={post.id} className="bg-gray-950 p-10">
+    <div className="bg-gray-950 p-10">
       <Link href={`/posts/${post.id}`}>
         <h3 className="text-xl font-bold mb-4">
           {post.id}. {post.title}
